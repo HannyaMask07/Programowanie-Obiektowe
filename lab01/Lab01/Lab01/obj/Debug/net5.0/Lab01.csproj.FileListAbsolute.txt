@@ -1,0 +1,16 @@
+C:\Users\krzysztof.trytek\Desktop\Programowanie-Obiektowe\lab01\Lab01\Lab01\bin\Debug\net5.0\Lab01.exe
+C:\Users\krzysztof.trytek\Desktop\Programowanie-Obiektowe\lab01\Lab01\Lab01\bin\Debug\net5.0\Lab01.deps.json
+C:\Users\krzysztof.trytek\Desktop\Programowanie-Obiektowe\lab01\Lab01\Lab01\bin\Debug\net5.0\Lab01.runtimeconfig.json
+C:\Users\krzysztof.trytek\Desktop\Programowanie-Obiektowe\lab01\Lab01\Lab01\bin\Debug\net5.0\Lab01.runtimeconfig.dev.json
+C:\Users\krzysztof.trytek\Desktop\Programowanie-Obiektowe\lab01\Lab01\Lab01\bin\Debug\net5.0\Lab01.dll
+C:\Users\krzysztof.trytek\Desktop\Programowanie-Obiektowe\lab01\Lab01\Lab01\bin\Debug\net5.0\ref\Lab01.dll
+C:\Users\krzysztof.trytek\Desktop\Programowanie-Obiektowe\lab01\Lab01\Lab01\bin\Debug\net5.0\Lab01.pdb
+C:\Users\krzysztof.trytek\Desktop\Programowanie-Obiektowe\lab01\Lab01\Lab01\obj\Debug\net5.0\Lab01.csproj.AssemblyReference.cache
+C:\Users\krzysztof.trytek\Desktop\Programowanie-Obiektowe\lab01\Lab01\Lab01\obj\Debug\net5.0\Lab01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\krzysztof.trytek\Desktop\Programowanie-Obiektowe\lab01\Lab01\Lab01\obj\Debug\net5.0\Lab01.AssemblyInfoInputs.cache
+C:\Users\krzysztof.trytek\Desktop\Programowanie-Obiektowe\lab01\Lab01\Lab01\obj\Debug\net5.0\Lab01.AssemblyInfo.cs
+C:\Users\krzysztof.trytek\Desktop\Programowanie-Obiektowe\lab01\Lab01\Lab01\obj\Debug\net5.0\Lab01.csproj.CoreCompileInputs.cache
+C:\Users\krzysztof.trytek\Desktop\Programowanie-Obiektowe\lab01\Lab01\Lab01\obj\Debug\net5.0\Lab01.dll
+C:\Users\krzysztof.trytek\Desktop\Programowanie-Obiektowe\lab01\Lab01\Lab01\obj\Debug\net5.0\ref\Lab01.dll
+C:\Users\krzysztof.trytek\Desktop\Programowanie-Obiektowe\lab01\Lab01\Lab01\obj\Debug\net5.0\Lab01.pdb
+C:\Users\krzysztof.trytek\Desktop\Programowanie-Obiektowe\lab01\Lab01\Lab01\obj\Debug\net5.0\Lab01.genruntimeconfig.cache

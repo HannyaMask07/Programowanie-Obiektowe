@@ -1,0 +1,12 @@
+Temat projektu: Aplikacja do zarządzania bazą danych hospicjum.
+
+1. Ustalić ogólne ramy aplikacji. Jakie opcję będzie zawierać, Zgłębienie tematu funkcjonowania hospicjum, jakie tabelę bedzie posiadać baza danych, szkic wyglądu interfejsu wizualnego.
+2. Przygotowanie wszystkich potrzebnych programów. Przestudiowanie ORM entity frameworku dla C#. 
+3. Utworzenie serwera bazodanowego oraz bazy danych hospicjum (minimum 4 tabele).
+4. Napisać kod źródłowy wraz z logiką aplikacji.
+5. Utworzyć interfejs urzytkownika w WPF.
+6. Utworzyć testy jednostkowe dla publicznych składników kodu.
+7. Utworzyć instalator aplikacji.
+8. Napisać dokumentacje XML
+9. Napisać dokumentacje aplikacji w formie ReadMe.
+10. Przygotowanie się do prezentacji projektu. Sprawdzenie czy wszystkie poprzednie kroki zostały poprawnie zrealizowane. Wyłapanie pewnych błędów i poprawnienie ich.

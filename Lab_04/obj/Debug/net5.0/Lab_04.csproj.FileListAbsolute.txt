@@ -1,0 +1,16 @@
+D:\Users\krzysztof.trytek\source\repos\Lab_04\Lab_04\bin\Debug\net5.0\Lab_04.exe
+D:\Users\krzysztof.trytek\source\repos\Lab_04\Lab_04\bin\Debug\net5.0\Lab_04.deps.json
+D:\Users\krzysztof.trytek\source\repos\Lab_04\Lab_04\bin\Debug\net5.0\Lab_04.runtimeconfig.json
+D:\Users\krzysztof.trytek\source\repos\Lab_04\Lab_04\bin\Debug\net5.0\Lab_04.runtimeconfig.dev.json
+D:\Users\krzysztof.trytek\source\repos\Lab_04\Lab_04\bin\Debug\net5.0\Lab_04.dll
+D:\Users\krzysztof.trytek\source\repos\Lab_04\Lab_04\bin\Debug\net5.0\ref\Lab_04.dll
+D:\Users\krzysztof.trytek\source\repos\Lab_04\Lab_04\bin\Debug\net5.0\Lab_04.pdb
+D:\Users\krzysztof.trytek\source\repos\Lab_04\Lab_04\obj\Debug\net5.0\Lab_04.csproj.AssemblyReference.cache
+D:\Users\krzysztof.trytek\source\repos\Lab_04\Lab_04\obj\Debug\net5.0\Lab_04.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\krzysztof.trytek\source\repos\Lab_04\Lab_04\obj\Debug\net5.0\Lab_04.AssemblyInfoInputs.cache
+D:\Users\krzysztof.trytek\source\repos\Lab_04\Lab_04\obj\Debug\net5.0\Lab_04.AssemblyInfo.cs
+D:\Users\krzysztof.trytek\source\repos\Lab_04\Lab_04\obj\Debug\net5.0\Lab_04.csproj.CoreCompileInputs.cache
+D:\Users\krzysztof.trytek\source\repos\Lab_04\Lab_04\obj\Debug\net5.0\Lab_04.dll
+D:\Users\krzysztof.trytek\source\repos\Lab_04\Lab_04\obj\Debug\net5.0\ref\Lab_04.dll
+D:\Users\krzysztof.trytek\source\repos\Lab_04\Lab_04\obj\Debug\net5.0\Lab_04.pdb
+D:\Users\krzysztof.trytek\source\repos\Lab_04\Lab_04\obj\Debug\net5.0\Lab_04.genruntimeconfig.cache

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ZAD_LAB08/1.0.0": {
+        "runtime": {
+          "ZAD_LAB08.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ZAD_LAB08/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

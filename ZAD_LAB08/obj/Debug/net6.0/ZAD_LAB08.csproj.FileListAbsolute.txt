@@ -1,0 +1,15 @@
+C:\Users\krzys\source\repos\Algorytmy\ZAD_LAB08\bin\Debug\net6.0\ZAD_LAB08.exe
+C:\Users\krzys\source\repos\Algorytmy\ZAD_LAB08\bin\Debug\net6.0\ZAD_LAB08.deps.json
+C:\Users\krzys\source\repos\Algorytmy\ZAD_LAB08\bin\Debug\net6.0\ZAD_LAB08.runtimeconfig.json
+C:\Users\krzys\source\repos\Algorytmy\ZAD_LAB08\bin\Debug\net6.0\ZAD_LAB08.dll
+C:\Users\krzys\source\repos\Algorytmy\ZAD_LAB08\bin\Debug\net6.0\ZAD_LAB08.pdb
+C:\Users\krzys\source\repos\Algorytmy\ZAD_LAB08\obj\Debug\net6.0\ZAD_LAB08.csproj.AssemblyReference.cache
+C:\Users\krzys\source\repos\Algorytmy\ZAD_LAB08\obj\Debug\net6.0\ZAD_LAB08.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\krzys\source\repos\Algorytmy\ZAD_LAB08\obj\Debug\net6.0\ZAD_LAB08.AssemblyInfoInputs.cache
+C:\Users\krzys\source\repos\Algorytmy\ZAD_LAB08\obj\Debug\net6.0\ZAD_LAB08.AssemblyInfo.cs
+C:\Users\krzys\source\repos\Algorytmy\ZAD_LAB08\obj\Debug\net6.0\ZAD_LAB08.csproj.CoreCompileInputs.cache
+C:\Users\krzys\source\repos\Algorytmy\ZAD_LAB08\obj\Debug\net6.0\ZAD_LAB08.dll
+C:\Users\krzys\source\repos\Algorytmy\ZAD_LAB08\obj\Debug\net6.0\refint\ZAD_LAB08.dll
+C:\Users\krzys\source\repos\Algorytmy\ZAD_LAB08\obj\Debug\net6.0\ZAD_LAB08.pdb
+C:\Users\krzys\source\repos\Algorytmy\ZAD_LAB08\obj\Debug\net6.0\ZAD_LAB08.genruntimeconfig.cache
+C:\Users\krzys\source\repos\Algorytmy\ZAD_LAB08\obj\Debug\net6.0\ref\ZAD_LAB08.dll

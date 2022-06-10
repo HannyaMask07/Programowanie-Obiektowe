@@ -1,164 +1,213 @@
 using System;
+using System.Collections.Generic;
 
-namespace Ułamek
-{
-    class Program
+namespace ProgObiektowe
     {
-        static void Main(string[] args)
+        class Program
         {
-            Console.WriteLine("Podaj pierwszy łamek w formacie licznik/mianownik");
-            string[] Ułamek = Console.ReadLine().Split("/");
-            int licznik = int.Parse(Ułamek[0]);
-            int mianownik = int.Parse(Ułamek[1]);
-            Console.WriteLine("Podaj drugi łamek w formacie licznik/mianownik");
-            string[] Ułamek2 = Console.ReadLine().Split("/");
-            int licznik2 = int.Parse(Ułamek2[0]);
-            int mianownik2 = int.Parse(Ułamek2[1]);
+            //https://dirask.com/posts/WSEI-2021-2022-lato-labN-1-ISN-Programowanie-obiektowe-lab-1-pa3ek1
+            static void Main(string[] args)
+            {
+                Ułamek a = new Ułamek(1, 2);
+                Ułamek b = new Ułamek(3, 2);
+
+                Console.WriteLine(a + b);
+                Console.WriteLine(a - b);
+                Console.WriteLine(a * b);
+                Console.WriteLine(a / b);
+
+                Ułamek c = new Ułamek(5, 2);
+                Ułamek d = new Ułamek(6, 2);
+                Ułamek e = new Ułamek(6, 2);
+                Ułamek f = new Ułamek(2, 2);
+                Ułamek g = new Ułamek(-1, 2);
 
 
-            Ułamek a = new Ułamek(licznik, mianownik);
-            Ułamek b = new Ułamek(licznik2, mianownik2);
+                Console.WriteLine(a.CompareTo(g));
 
-            Console.WriteLine("Podaj jaką operację chcesz wykonać na ułamkach a oraz b");
-            var operacja = 
 
-            
+
+                List<Ułamek> lista = new List<Ułamek>() { a, b, c, d, e, f, g };
+                Console.WriteLine("przed sortem");
+                foreach (var item in lista)
+                {
+                    Console.WriteLine(item);
+                }
+                lista.Sort();
+                Console.WriteLine("\npo sorcie");
+                foreach (var item in lista)
+                {
+                    Console.WriteLine(item);
+                }
+
+                Console.WriteLine("\nZaokrągl w dół");
+                Console.WriteLine(a.RoundDown());
+                Console.WriteLine("\nZaokrągl w górę");
+                Console.WriteLine(a.RoundUp());
+
+                Console.WriteLine("\n");
+
+                Console.WriteLine(a.Licznik);
+                Console.WriteLine(a.Mianownik);
+            }
+        }
+
+        class Ułamek : IEquatable<Ułamek>, IComparable<Ułamek>
+        {
+            private int licznik;
+            private int mianownik;
+
+            public int Licznik { get => licznik; }
+            public int Mianownik { get => mianownik; }
+
+            public Ułamek()
+            {
+                licznik = default;
+                mianownik = default;
+            }
+
+            public Ułamek(int licznik, int mianownik)
+            {
+                this.licznik = licznik;
+                this.mianownik = mianownik;
+            }
+
+            public Ułamek(Ułamek obj)
+            {
+                mianownik = obj.mianownik;
+                licznik = obj.licznik;
+            }
+
+            public int RoundUp()
+            {
+                double Result = (double)this.licznik / this.mianownik;
+                int Rounded = (int)Math.Ceiling(Result);
+                return Rounded;
+            }
+
+            public int RoundDown()
+            {
+                double Result = (double)this.licznik / this.mianownik;
+                int Rounded = (int)Math.Floor(Result);
+                return Rounded;
+            }
+
+            public override string ToString()
+            {
+                string Result = $"{licznik}/{mianownik}";
+                return Result;
+            }
+
+            public static Ułamek operator +(Ułamek a, Ułamek b)
+            {
+                if (a.mianownik == b.mianownik)
+                {
+                    return new Ułamek(a.licznik + b.licznik, a.mianownik);
+                }
+                else
+                {
+                    return new Ułamek(a.licznik * b.mianownik + b.licznik * a.mianownik, a.mianownik * b.mianownik);
+                }
+            }
+
+
+            public static Ułamek operator -(Ułamek a, Ułamek b)
+            {
+                if (a.mianownik == b.mianownik)
+                {
+                    return new Ułamek(a.licznik - b.licznik, a.mianownik);
+                }
+                else
+                {
+                    return new Ułamek(a.licznik * b.mianownik - b.licznik * a.mianownik, a.mianownik * b.mianownik);
+                }
+            }
+
+            public static Ułamek operator *(Ułamek a, Ułamek b)
+            {
+                return new Ułamek(a.licznik * b.licznik, a.mianownik * b.mianownik);
+            }
+
+            public static Ułamek operator /(Ułamek a, Ułamek b)
+            {
+                return new Ułamek(a.licznik * b.mianownik, b.licznik * a.mianownik);
+            }
+
+            public static bool operator ==(Ułamek a, Ułamek b)
+            {
+                return Equals(a, b);
+            }
+
+            public static bool operator !=(Ułamek a, Ułamek b)
+            {
+                return !Equals(a, b);
+            }
+
+            public static bool operator <(Ułamek a, Ułamek b)
+            {
+                return a.CompareTo(b) < 0;
+            }
+
+            public static bool operator >(Ułamek a, Ułamek b)
+            {
+                return a.CompareTo(b) > 0;
+            }
+
+            public static bool operator <=(Ułamek a, Ułamek b)
+            {
+                return a.CompareTo(b) <= 0;
+            }
+            public static bool operator >=(Ułamek a, Ułamek b)
+            {
+                return a.CompareTo(b) > 0;
+            }
+
+            public override bool Equals(object obj)
+            {
+                return base.Equals(obj as Ułamek);
+            }
+
+            public override int GetHashCode()
+            {
+                return HashCode.Combine(licznik.GetHashCode(), mianownik.GetHashCode());
+            }
+
+            public bool Equals(Ułamek other)
+            {
+                if ((double)this.licznik / this.mianownik == (double)other.licznik / other.mianownik)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+            public int CompareTo(Ułamek other)
+            {
+                if ((double)this.licznik / this.mianownik > (double)other.licznik / other.mianownik)
+                {
+                    return 1;
+                }
+                if (this.Equals(other))
+                {
+                    return 0;
+                }
+                else
+                {
+                    return -1;
+                }
+            }
+
 
 
         }
     }
 
-    class Ułamek : IEquatable<Ułamek>, IComparable<Ułamek>
-    {
-        private int licznik;
-        private int mianownik;
-
-        public Ułamek()
-        {
-            licznik = default;
-            mianownik = default;
-        }
-
-        public Ułamek(int licznik, int mianownik)
-        {
-            this.licznik = licznik;
-            this.mianownik = mianownik;
-        }
-
-        public Ułamek(Ułamek obj)
-        {
-            mianownik = obj.mianownik;
-            licznik = obj.licznik;
-        }
-
-        public override string ToString()
-        {
-            string Result = $"{licznik}/{mianownik}";
-            return Result;
-        }
-
-        public static Ułamek operator +(Ułamek a, Ułamek b)
-        {
-            if (a.mianownik == b.mianownik)
-            {
-                return new Ułamek(a.licznik + b.licznik, a.mianownik);
-            }
-            else
-            {
-                return new Ułamek(a.licznik * b.mianownik + b.licznik * a.mianownik, a.mianownik * b.mianownik);
-            }
-        }
 
 
-        public static Ułamek operator -(Ułamek a, Ułamek b)
-        {
-            if (a.mianownik == b.mianownik)
-            {
-                return new Ułamek(a.licznik - b.licznik, a.mianownik);
-            }
-            else
-            {
-                return new Ułamek(a.licznik * b.mianownik - b.licznik * a.mianownik, a.mianownik * b.mianownik);
-            }
-        }
 
-        public static Ułamek operator *(Ułamek a, Ułamek b)
-        {
-            return new Ułamek(a.licznik * b.licznik, a.mianownik * b.mianownik);
-        }
-
-        public static Ułamek operator /(Ułamek a, Ułamek b)
-        {
-            return new Ułamek(a.licznik * b.mianownik, b.licznik * a.mianownik);
-        }
-
-        public static bool operator ==(Ułamek a, Ułamek b)
-        {
-            return Equals(a, b);
-        }
-
-        public static bool operator !=(Ułamek a, Ułamek b)
-        {
-            return !Equals(a, b);
-        }
-
-        public static bool operator <(Ułamek a, Ułamek b)
-        {
-            return a.CompareTo(b) < 0;
-        }
-
-        public static bool operator >(Ułamek a, Ułamek b)
-        {
-            return a.CompareTo(b) > 0;
-        }
-
-        public static bool operator <=(Ułamek a, Ułamek b)
-        {
-            return a.CompareTo(b) <= 0;
-        }
-        public static bool operator >=(Ułamek a, Ułamek b)
-        {
-            return a.CompareTo(b) > 0;
-        }
-
-        public override bool Equals(object obj)
-        {
-            return base.Equals(obj as Ułamek);
-        }
-
-        public override int GetHashCode()
-        {
-            return HashCode.Combine(licznik.GetHashCode(), mianownik.GetHashCode());
-        }
-
-        public bool Equals(Ułamek other)
-        {
-            if ((double)this.licznik/this.mianownik == (double)other.licznik/other.mianownik)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        public int CompareTo(Ułamek other)
-        {
-            if ((double)this.licznik / this.mianownik > (double)other.licznik / other.mianownik)
-            {
-                return 1;
-            }
-            if (this.Equals(other))
-            {
-                return 0;
-            }
-            else
-            {
-                return -1;
-            }
-
-
-        }
-    }
-}
+    
+       
+    
